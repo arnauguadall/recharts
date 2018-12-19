@@ -226,7 +226,7 @@ class Area extends Component {
 
   handleAnimationStart = () => {
     const { onAnimationStart } = this.props;
-    this.setState({ isAnimationFinished: false }, this.renderDots());
+    this.setState({ isAnimationFinished: false }, this.renderDots);
 
     if (_.isFunction(onAnimationStart)) {
       onAnimationStart();
